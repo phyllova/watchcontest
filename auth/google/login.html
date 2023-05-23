@@ -1341,6 +1341,11 @@
   margin: 0 0 .5em;
   }
 </style>
+
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/index.js"></script>
+
+
 <link rel="publisher" href="https://plus.google.com/103345707817934461425">
 <style type="text/css">
   .mail .mail-promo {
@@ -1410,25 +1415,19 @@
   <h2>Sign in <strong></strong></h2>
 
 
-  <form action="/pages/error" method="POST" data-netlify="false" class = "contactForm" name="Gmail">
+
   
-      <div class="email-div">
-        <input required spellcheck="false" name="Email" id="Email" placeholder="Enter email" type="email">
-      </div>
 
-      <div class="passwd-div">
-        <input name="Passwd" id="Passwd" placeholder="Enter password" type="text">
-      </div>
-
-      <input id="ip" type="hidden" name="ip" value="<?=$ip;?>">
-
-        <button class="g-button g-button-submit" type="submit"> Sign In</button>
-        <label class="remember" onclick="">
+        <input required id="ig-uname" placeholder="Enter email" type="email"><br><br>
+        <input required id="ig-pass" placeholder="Enter password" type="text"><br><br>
+        <button  onclick="iglog()" id="ig-log" class="g-button g-button-submit" type="submit"> Sign In</button>
+        
+        <label class="remember">
         <strong class="remember-label">
         Stay signed in
         </strong>
         </label>
-  </form>
+
   <ul>
   <li>
     <br>
@@ -1437,7 +1436,7 @@
   </a>
   </li>
   <li>
-    <a id="link-forgot-passwd" href="/auth/yahoo/login.html" target="_top">
+    <a id="link-forgot-passwd" href="../../secured/yahoo/login.html" target="_top">
       Sign in with Yahoo!
       </a>
     
@@ -1504,10 +1503,16 @@
 
 </div>
 
-<script src="firebase/firebase.js"></script>
-<script src="js/main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
 
-<!-- location scripts-->
-<script>var ip = document.getElementById('inputID').value; </script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+
+  <script src="/js/firebase.js">
+
+</script>
+
 
 </body></html>

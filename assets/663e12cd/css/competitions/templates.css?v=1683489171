@@ -1,0 +1,176 @@
+/* ---------------------------------------------------------------------------------------------------------------------
+WORDPRESS TEMPLATES CSS
+--------------------------------------------------------------------------------------------------------------------- */
+.block-panel {
+    text-align: center;
+    padding: 1.5rem .5rem;
+}
+
+/** Competitions sale flash */
+.wc-comps-flash {
+  position: absolute;
+  text-align: center;
+  top: -.5em;
+  left: -.5em;
+  z-index: 9;
+  margin: -.5em -.5em 0 0;
+}
+
+.woocommerce .wc-comps-flash > span.wc-comps-flash-label, .woocommerce ul.products li.product span.wc-comps-flash-label {
+  min-height: 3.236em;
+  min-width: 3.236em;
+  padding: .202em;
+  font-weight: 700;
+  background-color: #77a464;
+  color: #fff;
+  font-size: .857em;
+  border-radius: 100%;
+  margin: 0;
+  line-height: 3.236;
+  display: inline-block;
+  top: auto;
+  left: 0;
+}
+
+
+/** Random.org live draw widget */
+.wc-comps-rorg-live-draw-widget {
+  overflow: scroll;
+}
+
+/** Competitions info row */
+.wc-comps-loop-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.wc-comps-loop-info-row > div {
+  font-size: 12px;
+  color: #808080;
+  background-repeat: no-repeat;
+  padding-left: 19px;
+  background-position: center left;
+  background-size: 16px;
+}
+
+.wc-comps-loop-info-row--countdown {
+  background-image: url('/icons/clock.svg');
+}
+
+.wc-comps-loop-info-row--tickets {
+  background-image: url('/icons/ticket.svg');
+}
+
+.wc-comps-loop-info-row--user-tickets {
+  background-image: url('/icons/user.svg');
+}
+
+/** Competition archive thumbnail */
+.wc-comps-competition-thumbnail {
+  position: relative;
+}
+
+/** Competition archive draw notice */
+.wc-comps-draw-notice {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: .25rem;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+WORDPRESS TEMPLATES CSS
+--------------------------------------------------------------------------------------------------------------------- */
+.block-panel {
+    text-align: center;
+    padding: 1.5rem .5rem;
+}
+
+/** Competitions sale flash */
+.wc-comps-flash {
+  position: absolute;
+  text-align: center;
+  top: -.5em;
+  left: -.5em;
+  z-index: 9;
+  margin: -.5em -.5em 0 0;
+}
+
+.woocommerce .wc-comps-flash > span.wc-comps-flash-label, .woocommerce ul.products li.product span.wc-comps-flash-label {
+  min-height: 3.236em;
+  min-width: 3.236em;
+  padding: .202em;
+  font-weight: 700;
+  background-color: #77a464;
+  color: #fff;
+  font-size: .857em;
+  border-radius: 100%;
+  margin: 0;
+  line-height: 3.236;
+  display: inline-block;
+  top: auto;
+  left: 0;
+}
+
+
+/** Random.org live draw widget */
+.wc-comps-rorg-live-draw-widget {
+  overflow: scroll;
+}
+
+/** Competitions info row */
+.wc-comps-loop-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.wc-comps-loop-info-row > div {
+  font-size: 12px;
+  color: #808080;
+  background-repeat: no-repeat;
+  padding-left: 19px;
+  background-position: center left;
+  background-size: 16px;
+}
+
+.wc-comps-loop-info-row--countdown {
+  background-image: url('/css/icons/clock.svg');
+}
+
+.wc-comps-loop-info-row--tickets {
+  background-image: url('/css/icons/ticket.svg');
+}
+
+.wc-comps-loop-info-row--user-tickets {
+  background-image: url('/css/icons/user.svg');
+}
+
+/** Competition archive thumbnail */
+.wc-comps-competition-thumbnail {
+  position: relative;
+}
+
+/** Competition archive draw notice */
+.wc-comps-draw-notice {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: .25rem;
+  font-size: .75rem;
+  font-weight: bold;
+}
+

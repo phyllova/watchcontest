@@ -1,0 +1,95 @@
+/* ---------------------------------------------------------------------------------------------------------------------
+WOOCOMMERCE COMPETITION PRODUCT CSS
+--------------------------------------------------------------------------------------------------------------------- */
+.add-to-cart-form .form-row {
+    margin-bottom: 15px;
+}
+
+.wc-comps-tickets-progress-wrapper {
+    margin: 25px 0;
+}
+
+.wc-comps-tickets-progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.65625rem;
+    background-color: #e9ecef;
+    border-radius: 0.5rem;
+}
+
+.wc-comps-tickets-progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #f2f2f2;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #1b1c20;
+    border-radius: 0.5rem;
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.wc-comps-tickets-progress-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.launch-price-indicator {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    background-color: #1b1c20;
+    bottom: 0;
+}
+
+.launch-price-indicator-text {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.4 6.5' fill='none' stroke='%231b1c20' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M.5 6l2.6-2.6 1.5 1.5 4-4M5.7.5h3.2v3.2'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center left;
+    padding-left: .875rem;
+}
+
+@media (max-width: 991px) {
+    .wc-comps-tickets-progress-labels {
+        flex-direction: column;
+    }
+
+    .launch-price-indicator-text {
+        margin-top: 1px;
+        font-size: .75rem;
+    }
+}
+
+.competition-total-raised {
+    display: inline-block;
+    width: 100%;
+}
+
+.competition-total-raised > h4 {
+    float: left;
+    margin-right: 30px;
+}
+
+.competition-total-raised > h4:last-child {
+    margin-right: 0;
+}
+
+.competition-total-raised > h4 span {
+    font-size: 34px;
+}

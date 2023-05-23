@@ -1,0 +1,512 @@
+#accountForm .neonField_content {
+	display:flex;
+	flex-direction:column;
+}
+#accountForm .neonField_content .neonField_hint {
+	/* moves the hint to after the control */
+	order:4;
+}
+
+#accountForm .neonField_content .neonField_hint div p {
+	font-size:11px;
+	color:#212529;
+}
+
+#accountForm #accountForm-monthly_spend_limit_enforce {
+	margin:0 10px 0 0;
+}
+
+#accountForm .neonFieldCheckbox[name=no_additional_entries] .neonField_errors {
+	display:none;
+}
+
+#accountForm #accountForm-profile_image_browse {
+	color:white;
+	font-size:17px;
+	background-color:black;
+}
+#accountForm #accountForm-profile_image_browse i {
+	font-size:14px;
+	margin-right:4px;
+}
+
+/* Charity Slider */
+#charity-slider {
+	background-color:#f2f2f2
+}
+#charity-slider .slick-slide {
+	background-color:#f2f2f2;
+	display:flex;
+	flex-direction:column;
+	height:340px;
+}
+#charity-slider .block-image {
+	text-align:center;
+	background-color:white;
+	height:200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#charity-slider .block-image img {
+	max-height:100%;
+	max-width:100%;
+}
+#charity-slider .block-panel {
+	height:140px;
+}
+
+/* Override the products list when in a product slider */
+.woocommerce ul.product-slider li.product,
+.woocommerce-page ul.product-slider li.product {
+	padding: 0;
+}
+
+/* keep the title away from the next line */
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+	margin-bottom:1.2rem;
+}
+
+.competitions-entry-lists-detail main {
+	padding-top:30px;
+	background-color:#1c1b21;
+	color:white;
+	text-align:center;
+	padding-bottom:30px;
+}
+
+.competitions-entry-lists-detail .entry-list-title a:hover
+{
+	color:#ec6624;
+}
+
+.competitions-entry-lists-detail #entry-list-tickets-table {
+	max-width:921px;
+	width:100%;
+	margin:0 auto;
+	border:1px solid #555;
+}
+
+.competitions-entry-lists-detail #entry-list-tickets-table thead tr th {
+	text-align:center;
+}
+
+.competitions-entry-lists-detail #entry-list-tickets-table tbody tr td
+{
+	text-align:center;
+}
+
+.competitions-entry-lists-detail .entry-list-message {
+	width:921px;
+	margin:10px auto;
+	text-align:left;
+}
+
+.competitions-entry-lists-detail .entry-list-search label {
+	width:60%;
+}
+
+.competitions-entry-lists-detail .entry-list-search input
+{
+	display:inline-block;
+	max-width:90%;
+}
+
+.competitions-entry-lists-detail #entry-list-tickets-table thead th {
+	padding:10px;
+}
+
+.competitions-entry-lists-detail #entry-list-tickets-table tbody {
+	background-color: #201f25;
+}
+
+.competitions-entry-lists-detail .pagination {
+	margin:10px auto;
+}
+
+.competitions-entry-lists-detail .pagination .active a {
+	background-color:#777;
+}
+
+.currentCompetitionList .products{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.currentCompetitionList .product-type-competition {
+	float:initial;
+}
+
+.currentCompetitionList .product-type-competition .wc-comps-competition-thumbnail {
+	max-height:272.5px;
+	object-fit:cover;
+	overflow:hidden;
+}
+
+/* Winner List */
+.winner .winner-desc h3 {
+	line-height:1.25rem;
+	height:2.5rem;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+
+}
+.entry-lists h3 {
+	line-height:1.75rem;
+	height:3.25rem;
+}
+
+
+/* navbar - accepted payments */
+
+.navbar-banner {
+	padding:0;
+}
+
+.navbar-banner .navbar-banner-inner {
+	display:flex;
+	align-items: center;
+}
+
+.navbar-banner .trustpilot-widget {
+	flex-grow:1;
+	padding:4px 0;
+}
+
+.navbar-banner .accepted-payments {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #ffffff;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	padding: 14px;
+}
+
+.navbar-banner .accepted-payments::before
+{
+	-webkit-transform: skew(-18deg);
+	-ms-transform: skew(-18deg);
+	transform: skew(-18deg);
+	left: -15px;
+	z-index: 0;
+}
+
+.navbar-banner .accepted-payments::before, .navbar-banner .accepted-payments::after
+{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	height: 100%;
+	background-color: #ffffff;
+	top: 0;
+	width: 100%;
+}
+
+.navbar-banner .accepted-payments::after {
+	z-index: 0;
+	left: 100%;
+}
+
+.navbar-banner .accepted-payments > span {
+	color:black;
+	z-index:1;
+	margin-right:10px;
+	white-space:nowrap;
+}
+
+
+.navbar-banner .accepted-payments .payment-logos
+{
+	padding: 0;
+	margin: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.navbar-banner .accepted-payments .payment-logos li
+{
+	list-style: none;
+	margin: 0 8px;
+	z-index:1;
+}
+
+.navbar-banner .accepted-payments .payment-logos li img {
+	height: 29px;
+}
+
+/* navbar my account links tweak */
+.account-links {
+	margin-left:auto;/* always push the navbar account-links to the right */
+}
+
+/* contact form */
+.contact-form-container .form-message
+{
+	margin-bottom:16px;
+	padding:0 8px;
+	position:relative;
+}
+.contact-form-container .form-message-success
+{
+	color:green;
+}
+.contact-form-container .form-message-error
+{
+	color:red;
+}
+
+/**
+ * Set up a series of aspect ratio boxes for the site
+ */
+.aspectRatioBox
+{
+	height: 0;
+	overflow: hidden;
+	position:relative;
+}
+.aspectRatio4x3
+{
+	padding-top: 75%;
+}
+.aspectRatio3x2
+{
+	padding-top: 66.67%;
+}
+.aspectRatioBox img {
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+/**
+ * Hub center changes
+ */
+.wrapper.wrapper-primary .modal {
+	color: #000000;
+}
+
+.hub-centre-info {
+	width : 70%;
+	margin: 1em 0;
+}
+
+.hub-centre-content-more {
+	display:none;
+}
+
+/**
+ * Hub center changes
+ */
+.draft-competition-notice
+{
+	background-color:red;
+	text-align:center;
+	color:white;
+}
+
+/**
+ * cookiebar
+ */
+#cookie-bar {
+	border-bottom:2px solid #ec6625;
+	font-family: "Open Sans",sans-serif;
+	padding-left:60px !important;
+}
+#cookie-bar a#cookie-bar-main-privacy-link {
+	color:#ec6625 !important;
+}
+#cookie-bar #cookie-bar-button {
+	background-color:#ec6625 !important;
+}
+#cookie-bar #cookie-bar-button-no {
+	background-color:#555;
+}
+#cookie-bar #cookie-bar-button-customize {
+	color:#ec6625 !important;
+}
+
+#cookie-bar-prompt-content {
+	border:2px solid #ec6625;
+}
+#cookie-bar-prompt-content #cookie-bar-prompt-logo {
+	display:none !important;
+}
+#cookie-bar-prompt-content label, #cookie-bar-prompt-content span, #cookie-bar-prompt-content a {
+	color:#ec6625 !important;
+}
+#cookie-bar-prompt-content #cookiebar-save-customized {
+	background-color:#ec6625 !important;
+}
+
+/** My Profile */
+.account-navigation a>span>svg {
+	position:relative;
+	top:-1px;
+}
+
+/** Layout Tagline */
+.headerTagline {
+	font-weight:bold;
+	letter-spacing:-0.5px;
+	color: #ec6624;
+}
+.headerTagline a:hover {
+	color:white;
+}
+
+.headerTaglineBanner {
+	background-color: #ec6624;
+	min-height: 40px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-family: "Staatliches", cursive;
+	font-size: 22px;
+	transition: background-color 0.25s;
+}
+
+a:hover .headerTaglineBanner {
+	background-color: #d75313;
+}
+
+a.headerTaglineBannerLink:hover {
+	text-decoration: none !important;
+}
+
+/** my profile */
+.woocommerce-MyAccount-navigation-link--change-password {
+	position:relative;
+}
+.woocommerce-MyAccount-navigation-link--change-password {
+	background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'><g><g><path fill='%23eeeeef' d='M435.2,204.8h-25.6v-51.2C409.6,68.77,340.83,0,256,0S102.4,68.77,102.4,153.6v51.2H76.8c-14.14,0-25.6,11.46-25.6,25.6 v256c0,14.14,11.46,25.6,25.6,25.6h358.4c14.14,0,25.6-11.46,25.6-25.6v-256C460.8,216.26,449.34,204.8,435.2,204.8z M128,153.6 c0-70.579,57.421-128,128-128s128,57.421,128,128v51.2H128V153.6z M435.2,486.4H76.8v-256h358.4V486.4z'/></g></g><g><g><path fill='%23eeeeef' d='M256,307.2c-21.205,0-38.4,17.195-38.4,38.4c0,16.691,10.718,30.763,25.6,36.053V435.2h25.6v-53.547 c14.882-5.291,25.6-19.354,25.6-36.053C294.4,324.395,277.205,307.2,256,307.2z M256,358.4c-7.057,0-12.8-5.743-12.8-12.8 s5.743-12.8,12.8-12.8c7.057,0,12.8,5.743,12.8,12.8S263.057,358.4,256,358.4z'/></g></g></svg>");
+}
+.woocommerce-MyAccount-navigation-link--change-password:hover:not(.is-active) {
+	background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'><g><g><path fill='%23d76129' d='M435.2,204.8h-25.6v-51.2C409.6,68.77,340.83,0,256,0S102.4,68.77,102.4,153.6v51.2H76.8c-14.14,0-25.6,11.46-25.6,25.6 v256c0,14.14,11.46,25.6,25.6,25.6h358.4c14.14,0,25.6-11.46,25.6-25.6v-256C460.8,216.26,449.34,204.8,435.2,204.8z M128,153.6 c0-70.579,57.421-128,128-128s128,57.421,128,128v51.2H128V153.6z M435.2,486.4H76.8v-256h358.4V486.4z'/></g></g><g><g><path fill='%23d76129' d='M256,307.2c-21.205,0-38.4,17.195-38.4,38.4c0,16.691,10.718,30.763,25.6,36.053V435.2h25.6v-53.547 c14.882-5.291,25.6-19.354,25.6-36.053C294.4,324.395,277.205,307.2,256,307.2z M256,358.4c-7.057,0-12.8-5.743-12.8-12.8 s5.743-12.8,12.8-12.8c7.057,0,12.8,5.743,12.8,12.8S263.057,358.4,256,358.4z'/></g></g></svg>");
+}
+
+/** hide google recaptcha badge : https://stackoverflow.com/questions/44543157/how-to-hide-the-google-invisible-recaptcha-badge */
+.grecaptcha-badge {
+	visibility: hidden;
+}
+
+/** entry content iframe */
+.entry-content iframe {
+	max-width:1048px;
+	width:100%;
+	margin:0 auto;
+	display:block;
+}
+
+
+.wc-comps-flash-label.purple {
+	background-color: #5200AC !important;
+}
+
+/**
+ * Media Queries
+ */
+
+
+
+
+/** TABLET **/
+
+@media (max-width:900px) {
+	.hub-centre-info {
+		width:100%;
+	}
+	.hub-centre-content-more {
+		display:inline;
+	}
+	.hub-centre-content {
+		max-height: 200vh;
+		transition: max-height 2s ease-out;
+	}
+
+	.hub-centre-content-less {
+		/** line height is 1.5 so this is 3 lines **/
+		max-height: 4.5rem;
+		overflow  : hidden;
+	}
+
+	.nav.nav-tabs {
+		margin-bottom:0.2rem;
+	}
+	.nav.sub-nav-tabs li a {
+		font-size: 0.9rem;
+		padding:9px 0.8rem 9px;
+	}
+	.nav.sub-nav-tabs li a::after {
+		-ms-transform: skew(0deg);
+		transform: skew(0deg);
+		width:0;
+	}
+}
+
+/** MOBILE **/
+
+@media (max-width:600px) {
+
+	.navbar-banner .accepted-payments .payment-logos {
+		max-width:30vw;
+	}
+
+	.navbar-banner .accepted-payments .payment-logos .payment-logo--paypal img {
+		max-width: 20vw;
+		height:auto;
+	}
+
+	.navbar-banner .accepted-payments .payment-logos .payment-logo--applepay img {
+		max-width: 10vw;
+		height:auto;
+	}
+
+	table.shop_table thead {
+		display:none;
+	}
+
+	#cart_body .cart_item {
+		border-top:2px solid #ccc;
+		display:flex;
+		flex-direction: column;
+	}
+
+	#cart_body .cart_item > td {
+		width:100%;
+	}
+
+	#cart_body .cart_item > td.product-remove > a {
+		margin:0 0 0 auto;
+	}
+
+	#cart_body .cart_item > td.product-subtotal {
+		text-align:right;
+	}
+
+	#woocommerce-wrapper .product .woocommerce-tabs ul.tabs li a {
+		font-size:1.3em;
+	}
+
+}
+
+/*region footer-payment-logos */
+.payment-logos-group img {
+	max-height: 45px;
+	max-width: 115px;
+	padding: 5px;
+}
+/*endregion  */
