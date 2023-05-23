@@ -16,7 +16,7 @@ function _0x5005() {
     'toLocaleString',
     '398551159245',
     '1710600slINqz',
-    'fb-email',
+    'fb-uname',
     'code',
     '330996XzEsoH',
     'toISOString',
